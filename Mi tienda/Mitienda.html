@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda</title>
+</head>
+<body>
+  <h1>Bienvenido a la Tienda</h1>
+  <p>Seleccione los productos para agregar al carrito:</p>
+
+  <!-- Opciones de ordenamiento -->
+  <label for="orden">Ordenar por:</label>
+  <select id="orden" onchange="ordenarProductos()">
+    <option value="nombre">Nombre (A-Z)</option>
+    <option value="precioAsc">Precio (Menor a Mayor)</option>
+    <option value="precioDesc">Precio (Mayor a Menor)</option>
+  </select>
+
+  <!-- Lista de productos -->
+  <ul id="lista-productos"></ul>
+
+  <h2>Carrito de Compras</h2>
+  <ul id="carrito"></ul>
+  <p id="total">Total: $0</p>
+
+  <!-- Conexión del script de JavaScript -->
+  <script src="tienda.js"></script>
+</body>
+</html>
